@@ -1,8 +1,8 @@
 import aiohttp
-import requests
+import ssl
 from typing import Dict, Optional
-from ..core.config import settings
-from ..core.logger import get_logger
+from app.core.config import settings
+from app.core.logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -10,10 +10,15 @@ logger = get_logger(__name__)
 class DataEnricher:
     def __init__(self):
         self.session = None
+        # Create a default SSL context
+        self.ssl_context = ssl.create_default_context()
+        self.ssl_context.check_hostname = False
+        self.ssl_context.verify_mode = ssl.CERT_NONE
 
     async def _get_session(self) -> aiohttp.ClientSession:
         if self.session is None or self.session.closed:
-            self.session = aiohttp.ClientSession()
+            connector = aiohttp.TCPConnector(ssl=self.ssl_context)
+            self.session = aiohttp.ClientSession(connector=connector)
         return self.session
 
     async def get_opencorporates_data(self, entity: Dict) -> Optional[Dict]:
@@ -28,13 +33,13 @@ class DataEnricher:
     async def get_wikidata_info(self, entity: Dict) -> Optional[Dict]:
         try:
             company_name = entity['name']
-            entity_id = self._get_entity_by_label(company_name)
+            entity_id = await self._get_entity_by_label(company_name)
 
             if not entity_id:
                 logger.warning(f"No Wikidata entity found for: {company_name}")
                 return None
 
-            details = self._get_entity_details(entity_id)
+            details = await self._get_entity_details(entity_id)
             if not details:
                 logger.warning(f"Could not fetch Wikidata details for entity ID: {entity_id}")
                 return None
@@ -59,38 +64,41 @@ class DataEnricher:
             logger.error(f"Wikidata API error: {str(e)}")
             return None
 
-    def _get_entity_by_label(self, label: str) -> Optional[str]:
+    async def _get_entity_by_label(self, label: str) -> Optional[str]:
         """Search for a Wikidata entity by label using the wbsearchentities API."""
         search_url = "https://www.wikidata.org/w/api.php"
         params = {
             'action': 'wbsearchentities',
             'format': 'json',
             'language': 'en',
-            'search': label
+            'search': label,
+            'type': 'item'
         }
 
         try:
-            response = requests.get(search_url, params=params)
-            if response.status_code == 200:
-                data = response.json()
-                search_results = data.get("search", [])
-                if search_results:
-                    return search_results[0].get("id")
+            session = await self._get_session()
+            async with session.get(search_url, params=params) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    search_results = data.get("search", [])
+                    if search_results:
+                        return search_results[0].get("id")
         except Exception as e:
             logger.error(f"Error searching Wikidata entity: {str(e)}")
         return None
 
-    def _get_entity_details(self, entity_id: str) -> Optional[Dict]:
+    async def _get_entity_details(self, entity_id: str) -> Optional[Dict]:
         """Fetch detailed information for a given entity using the Wikibase REST API."""
         entity_url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
 
         try:
-            response = requests.get(entity_url)
-            if response.status_code == 200:
-                data = response.json()
-                entities = data.get("entities", {})
-                if entity_id in entities:
-                    return entities[entity_id]
+            session = await self._get_session()
+            async with session.get(entity_url) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    entities = data.get("entities", {})
+                    if entity_id in entities:
+                        return entities[entity_id]
         except Exception as e:
             logger.error(f"Error fetching Wikidata entity details: {str(e)}")
         return None
@@ -98,12 +106,15 @@ class DataEnricher:
     def _extract_property(self, claims: Dict, prop: str, sub_prop: str = "value") -> Optional[str]:
         """Extracts a property value from claims."""
         if prop in claims:
-            claim = claims[prop][0]
-            datavalue = claim.get("mainsnak", {}).get("datavalue", {})
-            if sub_prop == "value":
-                return datavalue.get("value")
-            else:
-                return datavalue.get(sub_prop)
+            try:
+                claim = claims[prop][0]
+                datavalue = claim.get("mainsnak", {}).get("datavalue", {})
+                if sub_prop == "value":
+                    return datavalue.get("value")
+                else:
+                    return datavalue.get(sub_prop)
+            except (IndexError, KeyError, TypeError):
+                return None
         return None
 
     async def get_sec_edgar_data(self, entity: Dict) -> Optional[Dict]:
