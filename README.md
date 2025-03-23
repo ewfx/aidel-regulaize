@@ -32,8 +32,23 @@ Explain the key features and functionalities of your project.
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+## 🚧 Pre-Load OFAC Sanctions List into MongoDB instance
+The latest sanction list (published on 21st March 2025) has been downloaded and saved in "static_data/sdn.xml".
+To load this data into the mongoDB instance, follow these steps:
+1. Provide the MongoDB Sanctions DB and collection name in the .env file:
+   ```sh
+   MONGO_SANCTIONS_DB=sanctions_db
+   MONGO_SANCTIONS_COLLECTION=sdn_list
+   ```
+2. From the terminal run the following command:
+   ```sh
+   python3 load_sdn_list.py
+   ```
+
+3. If you need to wipe existing data from the mongoDB sanctions database before inserting fresh data, run the script with the --wipe flag (it will ask for confirmation before deleting data from the DB)
+   ```sh
+   python3 load_sdn_list.py --wipe
+   ```
 
 ## 🏃 How to Run
 1. If you already have an existing Redis and MongoDB instance, provide the config (hostname, port) in ".env" fie situated under code/src
