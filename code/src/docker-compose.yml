@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:latest
+    container_name: redis_container
+    ports:
+      - "${REDIS_PORT}:6379"
+    env_file:
+      - .env
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_container
+    ports:
+      - "${MONGO_PORT}:27017"
+    env_file:
+      - .env

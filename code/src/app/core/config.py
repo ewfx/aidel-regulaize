@@ -1,5 +1,10 @@
 from pydantic_settings import BaseSettings
 from typing import List
+from pydantic import Field
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Risk Platform API"
@@ -21,6 +26,12 @@ class Settings(BaseSettings):
     # Risk Scoring
     HIGH_RISK_THRESHOLD: float = 75.0
     MEDIUM_RISK_THRESHOLD: float = 50.0
+
+    REDIS_HOST: str = Field(default="localhost", env="REDIS_HOST")
+    REDIS_PORT: int = Field(default=6379, env="REDIS_PORT")
+
+    MONGO_HOST: str = Field(default="localhost", env="MONGO_HOST")
+    MONGO_PORT: int = Field(default=27017, env="MONGO_PORT")
     
     class Config:
         env_file = ".env"

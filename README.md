@@ -36,17 +36,32 @@ Briefly outline the technologies, frameworks, and tools used in development.
 Describe the major technical or non-technical challenges your team encountered.
 
 ## 🏃 How to Run
-1. Clone the repository  
+1. If you already have an existing Redis and MongoDB instance, provide the config (hostname, port) in ".env" fie situated under code/src
+If however you do not have existing instances of Redis and/mongodDB you can start your own locally using DOCKER containers. 
+   a. Ensure you have the DOCKER applicaition installed and running
+   b. Navigate to code/src and execute this command in the terminal:
+   docker-compose up -d
+   c. This will startup instances of Redis and MongoDB locally, in the predefined ports provided in .env file
+   d. To kill the docker instances you can run the below command in terminal:
+   docker-compose down
+
+2. Clone the repository  
    ```sh
    git clone https://github.com/your-repo.git
    ```
-2. Install dependencies  
+3. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt (for Python)
    ```
-3. Run the project  
+4. Run the project  
    ```sh
-   npm start  # or python app.py
+   python main.py
+
+5. To test whether the app has started successfuly you can access the below endpoints:
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/mongo-test
+http://127.0.0.1:8000/redis-test
+http://127.0.0.1:8000/docs
    ```
 
 ## 🏗️ Tech Stack
