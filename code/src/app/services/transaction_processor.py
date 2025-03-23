@@ -13,37 +13,38 @@ from app.core.logger import get_logger
 
 logger = get_logger(__name__)
 
+
 class TransactionProcessor:
     def __init__(self):
         self.entity_extractor = EntityExtractor()
         self.data_enricher = DataEnricher()
         self.risk_scorer = RiskScorer()
         self.cache = TTLCache(maxsize=1000, ttl=settings.CACHE_TTL)
-        
+
     async def process(self, transaction: TransactionRequest) -> TransactionResponse:
         start_time = datetime.utcnow()
-        
+
         # Extract entities
         entities = await self.entity_extractor.extract(
             transaction.payer,
             transaction.receiver,
             transaction.description
         )
-        
+
         # Enrich data (parallel processing)
         enrichment_tasks = [
             self.enrich_entity(entity) for entity in entities
         ]
         enriched_entities = await asyncio.gather(*enrichment_tasks)
-        
+
         # Score risks
         risk_profiles = [
             await self.risk_scorer.score(entity)
             for entity in enriched_entities
         ]
-        
+
         processing_time = (datetime.utcnow() - start_time).total_seconds() * 1000
-        
+
         return TransactionResponse(
             transactionID=transaction.transactionID,
             entities=risk_profiles,
@@ -52,18 +53,18 @@ class TransactionProcessor:
                 "processingTimeMs": processing_time
             }
         )
-    
+
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10)
     )
     async def enrich_entity(self, entity: Dict) -> Dict:
         cache_key = f"entity_{entity['name']}"
-        
+
         # Check cache first
         if cache_key in self.cache:
             return self.cache[cache_key]
-        
+
         # Parallel enrichment from different sources
         enrichment_tasks = [
             self.data_enricher.get_opencorporates_data(entity),
@@ -71,14 +72,33 @@ class TransactionProcessor:
             self.data_enricher.get_sec_edgar_data(entity),
             self.data_enricher.get_ofac_status(entity)
         ]
-        
+
         results = await asyncio.gather(*enrichment_tasks, return_exceptions=True)
-        
-        enriched_data = self._combine_enrichment_results(results)
+
+        enriched_data = self._combine_enrichment_results(entity, results)
         self.cache[cache_key] = enriched_data
-        
+
         return enriched_data
-    
+
+    def _combine_enrichment_results(self, entity: Dict, results: List[Dict]) -> Dict:
+        """Combines enrichment results from different sources into a single entity profile."""
+        enriched_entity = entity.copy()
+        enriched_entity['enriched_data'] = {
+            'openCorporates': results[0] if not isinstance(results[0], Exception) else None,
+            'wikidata': results[1] if not isinstance(results[1], Exception) else None,
+            'secEDGAR': results[2] if not isinstance(results[2], Exception) else None,
+            'ofac': results[3] if not isinstance(results[3], Exception) else {'listed': False}
+        }
+
+        # Add metadata about the enrichment process
+        enriched_entity['enrichment_metadata'] = {
+            'timestamp': datetime.utcnow().isoformat(),
+            'sources_available': sum(1 for r in results if not isinstance(r, Exception)),
+            'sources_total': len(results)
+        }
+
+        return enriched_entity
+
     async def log_transaction(self, transaction_id: str, result: TransactionResponse):
         # Implement audit logging logic here
         logger.info(f"Transaction {transaction_id} processed successfully")
