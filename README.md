@@ -45,7 +45,7 @@ To load this data into the mongoDB instance, follow these steps:
    python3 load_sdn_list.py
    ```
 
-3. If you need to wipe existing data from the mongoDB sanctions database before inserting fresh data, run the script with the --wipe flag (it will ask for confirmation before deleting data from the DB)
+3. If you need to wipe existing data from the mongoDB sanctions database before inserting fresh data, run the script with the --wipe flag (it will ask for confirmation before deleting data from the DB).
    ```sh
    python3 load_sdn_list.py --wipe
    ```

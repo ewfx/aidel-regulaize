@@ -20,7 +20,7 @@ To load this data into the mongoDB instance, follow these steps:
 
 2. If however you do not have existing instances of Redis and/mongodDB you can start your own locally using DOCKER containers. 
 
-3. Ensure you have the DOCKER applicaition installed and running
+3. Ensure you have the DOCKER applicaition installed and running.
 
 4. Navigate to code/src and execute this command in the terminal:
    ```sh
