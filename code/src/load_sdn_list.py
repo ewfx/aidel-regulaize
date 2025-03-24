@@ -24,7 +24,7 @@ load_dotenv()
 MONGO_HOST = os.getenv("MONGO_HOST", "localhost")
 MONGO_PORT = os.getenv("MONGO_PORT", "27017")
 MONGO_URI = f"mongodb://{MONGO_HOST}:{MONGO_PORT}"  # Default to localhost if not found
-DATABASE_NAME = os.getenv("MONGO_SANCTIONS_DB", "sanctions_db")
+DATABASE_NAME = os.getenv("MONGO_DB", "regulaizedb")
 COLLECTION_NAME = os.getenv("MONGO_SANCTIONS_COLLECTION", "sdn_list")
 
 # Initialize MongoDB
