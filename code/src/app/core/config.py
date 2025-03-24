@@ -32,6 +32,10 @@ class Settings(BaseSettings):
 
     MONGO_HOST: str = Field(default="localhost", env="MONGO_HOST")
     MONGO_PORT: int = Field(default=27017, env="MONGO_PORT")
+    MONGO_DATA_PATH: str = Field(default="data/db", env="MONGO_DATA_PATH")
+    MONGO_DB: str = Field(default="regulaizedb", env="MONGO_DB")
+    MONGO_OFAC_COLLECTION: str = Field(default="ofac", env="MONGO_OFAC_COLLECTION")
+    MONGO_ENTITY_COLLECTION: str = Field(default="entity", env="MONGO_ENTITY_COLLECTION")
     
     class Config:
         env_file = ".env"

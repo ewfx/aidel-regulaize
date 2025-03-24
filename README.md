@@ -3,10 +3,7 @@
 ## 📌 Table of Contents
 - [Introduction](#introduction)
 - [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
+- [Pre-Load OFAC Sanctions List into MongoDB instance](#ofac-sanctions)
 - [How to Run](#how-to-run)
 - [Tech Stack](#tech-stack)
 - [Team](#team)
@@ -23,21 +20,13 @@ A brief overview of your project and its purpose. Mention which problem statemen
 
 ![Screenshot 1](link-to-image)
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
-
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
-
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
 
 ## 🚧 Pre-Load OFAC Sanctions List into MongoDB instance
 The latest sanction list (published on 21st March 2025) has been downloaded and saved in "static_data/sdn.xml".
 To load this data into the mongoDB instance, follow these steps:
 1. Provide the MongoDB Sanctions DB and collection name in the .env file:
    ```sh
-   MONGO_SANCTIONS_DB=sanctions_db
+   MONGO_DB=regulaizedb
    MONGO_SANCTIONS_COLLECTION=sdn_list
    ```
 2. From the terminal run the following command:
@@ -82,10 +71,11 @@ To load this data into the mongoDB instance, follow these steps:
    python main.py
 
 10. To test whether the app has started successfuly you can access the below endpoints:
-http://127.0.0.1:8000/
-http://127.0.0.1:8000/mongo-test
-http://127.0.0.1:8000/redis-test
-http://127.0.0.1:8000/docs
+   ```sh
+   http://127.0.0.1:8000/
+   http://127.0.0.1:8000/mongo-test
+   http://127.0.0.1:8000/redis-test
+   http://127.0.0.1:8000/docs
    ```
 
 ## 🏗️ Tech Stack
