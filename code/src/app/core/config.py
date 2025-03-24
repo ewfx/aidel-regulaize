@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     MONGO_PORT: int = Field(default=27017, env="MONGO_PORT")
     MONGO_DATA_PATH: str = Field(default="data/db", env="MONGO_DATA_PATH")
     MONGO_DB: str = Field(default="regulaizedb", env="MONGO_DB")
-    MONGO_SANCTIONS_COLLECTION: str = Field(default="sdn_list", env="MONGO_SANCTIONS_COLLECTION")
+    MONGO_OFAC_COLLECTION: str = Field(default="ofac", env="MONGO_OFAC_COLLECTION")
     
     class Config:
         env_file = ".env"
