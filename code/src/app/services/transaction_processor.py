@@ -70,7 +70,8 @@ class TransactionProcessor:
             self.data_enricher.get_opencorporates_data(entity),
             self.data_enricher.get_wikidata_info(entity),
             self.data_enricher.get_sec_edgar_data(entity),
-            self.data_enricher.get_ofac_status(entity)
+            self.data_enricher.get_ofac_status(entity),
+            self.data_enricher.get_business_details(entity)
         ]
 
         results = await asyncio.gather(*enrichment_tasks, return_exceptions=True)
@@ -87,7 +88,8 @@ class TransactionProcessor:
             'openCorporates': results[0] if not isinstance(results[0], Exception) else None,
             'wikidata': results[1] if not isinstance(results[1], Exception) else None,
             'secEDGAR': results[2] if not isinstance(results[2], Exception) else None,
-            'ofac': results[3] if not isinstance(results[3], Exception) else {'listed': False}
+            'ofac': results[3] if not isinstance(results[3], Exception) else {'listed': False},
+            'business_details': results[4] if not isinstance(results[4], Exception) else None
         }
 
         # Add metadata about the enrichment process

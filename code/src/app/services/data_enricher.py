@@ -1,8 +1,12 @@
 import aiohttp
 import ssl
-from typing import Dict, Optional
+from typing import Dict, Optional, List
 from app.core.config import settings
 from app.core.logger import get_logger
+from pymongo import MongoClient
+
+# Create MongoDB client instance
+mongo_client = MongoClient(f"mongodb://{settings.MONGO_HOST}:{settings.MONGO_PORT}/")
 
 logger = get_logger(__name__)
 
@@ -126,11 +130,135 @@ class DataEnricher:
             logger.error(f"SEC EDGAR API error: {str(e)}")
             return None
 
-    async def get_ofac_status(self, entity: Dict) -> Dict:
+    async def get_business_details(self, entity: Dict) -> Optional[Dict]:
+        """
+        Fetch business details from the entities collection in MongoDB.
+        """
         try:
-            session = await self._get_session()
-            # Implement OFAC API call
-            return {"listed": False}  # Placeholder
+            db = mongo_client[settings.MONGO_DB]
+            entities_collection = db.entities
+
+            # Search for the entity by name
+            entity_name = entity['name'].lower()
+            business_record = entities_collection.find_one(
+                {"name": {"$regex": f"^{entity_name}$", "$options": "i"}},
+                {"_id": 0}
+            )
+
+            if business_record:
+                return {
+                    "found": True,
+                    "details": {
+                        "name": business_record.get("name"),
+                        "domain": business_record.get("domain"),
+                        "year_founded": business_record.get("year_founded"),
+                        "industry": business_record.get("industry"),
+                        "size_range": business_record.get("size_range"),
+                        "locality": business_record.get("locality"),
+                        "country": business_record.get("country"),
+                        "linkedin_url": business_record.get("linkedin_url"),
+                        "current_employee_estimate": business_record.get("current_employee_estimate"),
+                        "total_employee_estimate": business_record.get("total_employee_estimate")
+                    }
+                }
+            return {
+                "found": False,
+                "details": None
+            }
+
         except Exception as e:
-            logger.error(f"OFAC API error: {str(e)}")
-            return {"listed": False, "error": str(e)}
+            logger.error(f"Error fetching business details: {str(e)}")
+            return None
+
+    async def get_ofac_status(self, entity: Dict) -> Dict:
+        """
+        Check if an entity is listed in OFAC sanctions list using MongoDB.
+        Returns a dictionary with the OFAC status and additional details if available.
+        """
+        try:
+            # Get the OFAC collection from MongoDB
+            db = mongo_client[settings.MONGO_DB]
+            ofac_collection = db.ofac
+
+            # Search for the entity by name and its known aliases
+            entity_name = entity['name'].lower()
+            query = {
+                "$or": [
+                    {"name": {"$regex": f"^{entity_name}$", "$options": "i"}},
+                    {"name": {"$regex": entity_name, "$options": "i"}},
+                    {"akaLists": {
+                        "$elemMatch": {
+                            "$or": [
+                                {"lastname": {"$regex": entity_name, "$options": "i"}},
+                                {"firstname": {"$regex": entity_name, "$options": "i"}}
+                            ]
+                        }
+                    }}
+                ]
+            }
+
+            # Find matching records
+            ofac_record = ofac_collection.find_one(query, {"_id": 0})
+
+            if ofac_record:
+                # Process addresses
+                addresses = []
+                for addr in ofac_record.get("addresses", []):
+                    formatted_address = {
+                        "city": addr.get("city", "N/A"),
+                        "country": addr.get("country", "N/A")
+                    }
+                    # Add optional address fields if they exist and are not 'N/A'
+                    for field in ["address1", "address2", "address3", "postalCode"]:
+                        if addr.get(field) and addr.get(field) != "N/A":
+                            formatted_address[field] = addr[field]
+                    addresses.append(formatted_address)
+
+                # Process AKA lists
+                aka_names = []
+                for aka in ofac_record.get("akaLists", []):
+                    if aka.get("category") == "strong":
+                        aka_names.append({
+                            "uid": aka.get("uid"),
+                            "type": aka.get("type"),
+                            "name": aka.get("lastname", "")  # For entities, lastname contains the full name
+                        })
+
+                # Process identification lists
+                identifications = []
+                for id_item in ofac_record.get("idLists", []):
+                    identifications.append({
+                        "uid": id_item.get("uid"),
+                        "type": id_item.get("type"),
+                        "number": id_item.get("number"),
+                        "country": id_item.get("country")
+                    })
+
+                return {
+                    "listed": True,
+                    "match_type": "exact" if ofac_record["name"].lower() == entity_name else "partial",
+                    "details": {
+                        "uid": ofac_record.get("uid"),
+                        "name": ofac_record.get("name"),
+                        "type": ofac_record.get("type"),
+                        "programs": ofac_record.get("programs", []),
+                        "addresses": addresses,
+                        "aka_names": aka_names,
+                        "identifications": identifications,
+                        "remarks": ofac_record.get("remarks", "N/A")
+                    }
+                }
+            else:
+                return {
+                    "listed": False,
+                    "match_type": None,
+                    "details": None
+                }
+
+        except Exception as e:
+            logger.error(f"OFAC database error: {str(e)}")
+            return {
+                "listed": False,
+                "error": str(e),
+                "details": None
+            }
