@@ -69,6 +69,7 @@ for entry in tqdm(root.findall("ofac:sdnEntry", namespace), desc="Processing XML
             }
             for addr in entry.findall("ofac:addressList/ofac:address", namespace)
         ],
+        "remarks": entry.findtext("ofac:remarks", default="N/A", namespaces=namespace),
     }
     sanctions_data.append(data)
 
