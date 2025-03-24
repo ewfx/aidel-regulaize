@@ -3,7 +3,7 @@ The latest sanction list (published on 21st March 2025) has been downloaded and 
 To load this data into the mongoDB instance, follow these steps:
 1. Provide the MongoDB Sanctions DB and collection name in the .env file:
    ```sh
-   MONGO_SANCTIONS_DB=sanctions_db
+   MONGO_DB=regulaizedb
    MONGO_SANCTIONS_COLLECTION=sdn_list
    ```
 2. From the terminal run the following command:
@@ -47,7 +47,9 @@ To load this data into the mongoDB instance, follow these steps:
    python main.py
 
 10. To test whether the app has started successfuly you can access the below endpoints:
-http://127.0.0.1:8000/
-http://127.0.0.1:8000/mongo-test
-http://127.0.0.1:8000/redis-test
-http://127.0.0.1:8000/docs
+   ```sh
+   http://127.0.0.1:8000/
+   http://127.0.0.1:8000/mongo-test
+   http://127.0.0.1:8000/redis-test
+   http://127.0.0.1:8000/docs
+   ```
