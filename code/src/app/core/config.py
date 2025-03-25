@@ -56,6 +56,10 @@ class Settings(BaseSettings):
     NEO4J_LOGIN: str = "neo4j"
     NEO4J_PASSWORD: str = "reg_neo4j"
     NEO4J_DATA_PATH: str = "/Users/shalini/Documents/Projects/Hackathon/regulaize/neo4j"
+
+    COURTLISTENER_API_KEY: str = "b25e0edcd12982575e1c89c3628ef458a1fd16b2"
+    COURTLISTENER_URL: str = "https://www.courtlistener.com/api/rest/v4/search/"
+    COURTLISTENER_RESPONSE_FORMAT: str = "application/json"
     
     class Config:
         env_file = ".env"
