@@ -12,17 +12,21 @@ install_packages()
 import json
 from pymongo import MongoClient
 from app.core.config import settings
+from app.database import mongo_db
+from app.services.datasources import secedgar_service
 import re
 
 # Load MongoDB Configuration (Update as needed)
-MONGO_URI = f"mongodb://{settings.MONGO_HOST}:{settings.MONGO_PORT}"  # Default to localhost if not found
-DATABASE_NAME = settings.MONGO_DB
-COLLECTION_NAME = settings.MONGO_CIK_COLLECTION
+# MONGO_URI = f"mongodb://{settings.MONGO_HOST}:{settings.MONGO_PORT}"  # Default to localhost if not found
+# DATABASE_NAME = settings.MONGO_DB
+#COLLECTION_NAME = mongo_db.get_collection(settings.MONGO_CIK_COLLECTION)
 
 # Connect to MongoDB
-client = MongoClient(MONGO_URI)
-db = client[DATABASE_NAME]
-collection = db[COLLECTION_NAME]
+# client = MongoClient(MONGO_URI)
+# db = client[DATABASE_NAME]
+# collection = db[COLLECTION_NAME]
+
+collection=mongo_db.get_collection(settings.MONGO_CIK_COLLECTION)
 
 
 def insert_cik_data():
@@ -96,11 +100,11 @@ if __name__ == "__main__":
     #insert_cik_data()
 
     # Example Usage
-    company_name = "golden sands"
+    #company_name = "golden sands"
     # cik = get_cik_by_company_text_search(company_name)
     # print(f"CIK for {company_name}: {cik}")
-    cik = get_cik_by_company(company_name)
-    print(f"CIK for {company_name}: {cik}")
+    # cik = get_cik_by_company(company_name)
+    # print(f"CIK for {company_name}: {cik}")
     # cik = get_cik_by_company_fuzzy(company_name)
     # print(f"CIK for {company_name}: {cik}")
 
@@ -108,4 +112,9 @@ if __name__ == "__main__":
     # ticker = "TSLA"
     # company_info = get_company_by_ticker(ticker)
     # print(company_info)
+
+        # Example Usage
+    cik = "0000320193"  # Apple Inc.
+    company_info = secedgar_service.get_sec_company_info(cik)
+    print(company_info)
 

@@ -15,3 +15,5 @@ pymongo
 crawl4ai
 confluent-kafka==2.8.2
 motor==3.7.0
+bs4
+neo4j==5.28.1

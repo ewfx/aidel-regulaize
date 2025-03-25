@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
+    EMAIL: str = "shalini.thilakan@gmail.com"
     PROJECT_NAME: str = "Risk Platform API"
     PROJECT_DESCRIPTION: str = "Advanced Transaction Risk Analysis Platform"
     VERSION: str = "1.0.0"
@@ -48,6 +49,13 @@ class Settings(BaseSettings):
     KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: int = 1
     KAFKA_UI_PORT: int = 8080
     KAFKA_CLUSTERS_0_NAME: str = "regulaize-cluster"
+
+    NEO4J_PORT: int = 7474
+    NEO4J_HOST:str = "localhost"
+    BOLT_PORT:int = 7687
+    NEO4J_LOGIN: str = "neo4j"
+    NEO4J_PASSWORD: str = "reg_neo4j"
+    NEO4J_DATA_PATH: str = "/Users/shalini/Documents/Projects/Hackathon/regulaize/neo4j"
     
     class Config:
         env_file = ".env"

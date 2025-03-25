@@ -5,7 +5,6 @@ from contextlib import asynccontextmanager
 import uvicorn
 import redis
 import os
-from database import mongo_db, redis_client, kafka_producer
 
 from app.core.config import settings
 from app.core.logger import setup_logging
