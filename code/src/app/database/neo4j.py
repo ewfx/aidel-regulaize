@@ -81,4 +81,113 @@ def process_entity_data(entity_data):
             entity_data["latest_ownership_filings"]["accession_number"]
         )
 
-# Example SEC Data
+def get_companies_and_executives():
+    """
+    Fetches all companies and their executives from Neo4j.
+    """
+    query = """
+    MATCH (p:Person)-[:OWNS]->(c:Company)
+    RETURN c.name AS company, p.name AS owner, p.role AS role
+    """
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query))
+        return [{"company": record["company"], "owner": record["owner"], "role": record["role"]} for record in result]
+
+def get_company_filing_details(company_name):
+    """
+    Fetches a company's latest ownership filing details.
+    """
+    query = """
+    MATCH (c:Company {name: $company_name})
+    RETURN c.name AS company, 
+           c.latest_filing_form AS form, 
+           c.latest_filing_date AS filing_date, 
+           c.latest_filing_accession AS accession_number
+    """
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query, company_name=company_name))
+        return [record for record in result] if result else {"error": "Company not found"}
+
+def get_company_owners(company_name):
+    """
+    Fetches all owners of a given company.
+    """
+    query = """
+    MATCH (p:Person)-[:OWNS]->(c:Company {name: $company_name})
+    RETURN p.name AS owner, p.role AS role
+    """
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query, company_name=company_name))
+        return [{"owner": record["owner"], "role": record["role"]} for record in result]
+
+
+
+# Example Usage
+# risk_data = {
+#     "offshore_registration": True,
+#     "nominee_directors": True,
+#     "transaction_count": 150,
+#     "linked_to_sanctioned_entity": True,
+#     "risk_score": "HIGH"
+# }
+def update_company_risk_info(cik, risk_factors):
+    """
+    Updates a company's risk factors dynamically in Neo4j.
+    :param cik: The CIK of the company
+    :param risk_factors: Dictionary containing risk-related fields and their values
+    """
+    set_clause = ", ".join([f"c.{key} = ${key}" for key in risk_factors.keys()])
+    query = f"""
+    MATCH (c:Company {{cik: $cik}})
+    SET {set_clause}
+    RETURN c.name AS company, c.cik AS cik, {", ".join([f"c.{key}" for key in risk_factors.keys()])}
+    """
+    
+    with neo4j_driver.session() as session:
+        result = session.execute_write(lambda tx: tx.run(query, cik=cik, **risk_factors))
+        return [record for record in result]
+
+
+def find_direct_relationships(entity_name):
+    """
+    Finds direct relationships of an entity.
+    """
+    query = """
+    MATCH (e {name: $entity_name})-[r]-(other)
+    RETURN e.name AS entity, type(r) AS relationship, other.name AS connected_entity
+    """
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query, entity_name=entity_name))
+        return [{"entity": record["entity"], "relationship": record["relationship"], "connected_entity": record["connected_entity"]} for record in result]
+
+def find_indirect_relationships(entity_name, depth=3):
+    """
+    Finds indirect relationships of an entity up to a given depth.
+    """
+    query = f"""
+    MATCH (start {{name: $entity_name}})-[*1..{depth}]-(other)
+    RETURN start.name AS entity, other.name AS connected_entity, COUNT(*) AS connection_strength
+    ORDER BY connection_strength DESC
+    """
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query, entity_name=entity_name))
+        return [{"entity": record["entity"], "connected_entity": record["connected_entity"], "connection_strength": record["connection_strength"]} for record in result]
+
+
+def find_high_risk_relationships(identifier):
+    """
+    Finds all high-risk relationships for a given company or person based on CIK or name.
+    :param identifier: CIK (for companies) or entity name
+    :return: List of high-risk connections
+    """
+    query = """
+    MATCH (e)-[r]-(connected)
+    WHERE (e.cik = $identifier OR e.name = $identifier) 
+    AND (connected.risk_score = "HIGH" OR e.risk_score = "HIGH")
+    RETURN e.name AS entity, type(r) AS relationship, connected.name AS high_risk_entity, connected.risk_score AS risk_level
+    """
+    
+    with neo4j_driver.session() as session:
+        result = session.execute_read(lambda tx: tx.run(query, identifier=identifier))
+        return [{"entity": record["entity"], "relationship": record["relationship"], 
+                 "high_risk_entity": record["high_risk_entity"], "risk_level": record["risk_level"]} for record in result]
