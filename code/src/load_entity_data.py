@@ -13,17 +13,12 @@ install_packages()
 import pandas as pd
 from pymongo import MongoClient
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
+from app.core.config import settings
 
 # Load MongoDB Configuration (Update as needed)
-MONGO_HOST = os.getenv("MONGO_HOST", "localhost")
-MONGO_PORT = os.getenv("MONGO_PORT", "27017")
-MONGO_URI = f"mongodb://{MONGO_HOST}:{MONGO_PORT}"  # Default to localhost if not found
-DATABASE_NAME = os.getenv("MONGO_DB", "regulaizedb")
-COLLECTION_NAME = os.getenv("MONGO_ENTITY_COLLECTION", "entity")
+MONGO_URI = f"mongodb://{settings.MONGO_HOST}:{settings.MONGO_PORT}"  # Default to localhost if not found
+DATABASE_NAME = settings.MONGO_DB
+COLLECTION_NAME = settings.MONGO_ENTITY_COLLECTION
 
 # Connect to MongoDB
 client = MongoClient(MONGO_URI)
@@ -56,8 +51,8 @@ if __name__ == "__main__":
         print("Existing data cleared!")
 
     # Process and insert data
-    #process_and_insert()
-    #collection.create_index("name")
+    process_and_insert()
+    collection.create_index("name")
 
     print(search_entity("Bobcares"))
     print(search_entity("Nykaa"))

@@ -16,3 +16,49 @@ services:
       - "${MONGO_DATA_PATH}:/data/db"
     env_file:
       - .env
+
+  zookeeper:
+    image: 'confluentinc/cp-zookeeper:latest'
+    container_name: zookeeper
+    restart: always
+    environment:
+      ZOOKEEPER_CLIENT_PORT: ${ZOOKEEPER_CLIENT_PORT}
+      ZOOKEEPER_TICK_TIME: ${ZOOKEEPER_TICK_TIME}
+    ports:
+      - "${ZOOKEEPER_CLIENT_PORT}:${ZOOKEEPER_CLIENT_PORT}"
+    env_file:
+      - .env
+
+  kafka:
+    image: 'confluentinc/cp-kafka:latest'
+    container_name: kafka
+    restart: always
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: ${KAFKA_BROKER_ID}
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:${ZOOKEEPER_CLIENT_PORT}"
+      KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://localhost:${KAFKA_PORT}"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "${KAFKA_LISTENER_SECURITY_PROTOCOL_MAP}"
+      KAFKA_LISTENERS: "PLAINTEXT://0.0.0.0:${KAFKA_PORT}"
+      KAFKA_INTER_BROKER_LISTENER_NAME: "${KAFKA_INTER_BROKER_LISTENER_NAME}"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: ${KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR}
+    ports:
+      - "${KAFKA_PORT}:${KAFKA_PORT}"
+    env_file:
+      - .env
+
+  # Example Kafka UI (optional)
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    restart: always
+    depends_on:
+      - kafka
+    ports:
+      - "${KAFKA_UI_PORT}:${KAFKA_UI_PORT}"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: "${KAFKA_CLUSTERS_0_NAME}"
+      KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS: "kafka:${KAFKA_PORT}"
+    env_file:
+      - .env

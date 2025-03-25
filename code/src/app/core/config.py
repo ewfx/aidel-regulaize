@@ -27,15 +27,27 @@ class Settings(BaseSettings):
     HIGH_RISK_THRESHOLD: float = 75.0
     MEDIUM_RISK_THRESHOLD: float = 50.0
 
-    REDIS_HOST: str = Field(default="localhost", env="REDIS_HOST")
-    REDIS_PORT: int = Field(default=6379, env="REDIS_PORT")
+    REDIS_HOST: str = "localhost"
+    REDIS_PORT: int = 6379
+    REDIS_DB: str = "regulaize_redis"
 
-    MONGO_HOST: str = Field(default="localhost", env="MONGO_HOST")
-    MONGO_PORT: int = Field(default=27017, env="MONGO_PORT")
-    MONGO_DATA_PATH: str = Field(default="data/db", env="MONGO_DATA_PATH")
-    MONGO_DB: str = Field(default="regulaizedb", env="MONGO_DB")
-    MONGO_OFAC_COLLECTION: str = Field(default="ofac", env="MONGO_OFAC_COLLECTION")
-    MONGO_ENTITY_COLLECTION: str = Field(default="entity", env="MONGO_ENTITY_COLLECTION")
+    MONGO_HOST: str = "localhost"
+    MONGO_PORT: int = 27017
+    MONGO_DATA_PATH: str = "data/db"
+    MONGO_DB: str = "regulaizedb"
+    MONGO_OFAC_COLLECTION: str = "ofac"
+    MONGO_ENTITY_COLLECTION: str = "entity"
+    MONGO_CIK_COLLECTION: str = "cik"
+
+    ZOOKEEPER_CLIENT_PORT: int = 6379
+    ZOOKEEPER_TICK_TIME: int = 2000
+    KAFKA_BROKER_ID: int = 1
+    KAFKA_PORT: int = 9092
+    KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: str = "PLAINTEXT:PLAINTEXT"
+    KAFKA_INTER_BROKER_LISTENER_NAME: str = "PLAINTEXT"
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: int = 1
+    KAFKA_UI_PORT: int = 8080
+    KAFKA_CLUSTERS_0_NAME: str = "regulaize-cluster"
     
     class Config:
         env_file = ".env"

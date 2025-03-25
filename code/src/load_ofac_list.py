@@ -111,10 +111,10 @@ def processOFACFile(xml_file):
 sdn_file = "./static_data/sdn.xml"  # Ensure this is the correct path
 consolidated_file = "./static_data/consolidated.xml"
 
-print("Processing SDN file...")
-processOFACFile(sdn_file)
-print("Processing consolidated OFAC file...")
-processOFACFile(consolidated_file)
+# print("Processing SDN file...")
+# processOFACFile(sdn_file)
+# print("Processing consolidated OFAC file...")
+# processOFACFile(consolidated_file)
 
 
 # # Fetch a sample record
@@ -125,5 +125,6 @@ def search_sanctioned_entity(name):
     result = collection.find_one({"name": {"$regex": name, "$options": "i"}})
     return result if result else "No matching entity found."
 
-print(search_sanctioned_entity("HAVIN BANK LIMITED"))
-print(search_sanctioned_entity("BANK OF KUNLUN CO LTD"))
+#print(search_sanctioned_entity("HAVIN BANK LIMITED"))
+#print(search_sanctioned_entity("BANK OF KUNLUN CO LTD"))
+print(search_sanctioned_entity("golden sands"))
