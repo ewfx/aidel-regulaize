@@ -4,7 +4,7 @@ pydantic==2.10.6
 pydantic-settings==2.8.1
 transformers==4.35.2
 torch==2.1.2
-numpy==1.24.3
+numpy==1.26.4
 requests==2.32.3
 python-dotenv==1.0.1
 aiohttp==3.11.14
@@ -12,5 +12,9 @@ cachetools==5.5.2
 tenacity==9.0.0
 redis
 pymongo
+<<<<<<< HEAD
 confluent-kafka==2.8.2
 motor==3.7.0
+=======
+crawl4ai
+>>>>>>> 54e100bdd8e77f9deca86616d435b6a742568ce5

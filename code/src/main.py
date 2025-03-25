@@ -1,14 +1,12 @@
 import yaml
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import uvicorn
-from pymongo import MongoClient
 import redis
 import os
 from database import mongo_db, redis_client, kafka_producer
 
-from app.api.routes import router as api_router
 from app.core.config import settings
 from app.core.logger import setup_logging
 
@@ -44,7 +42,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include API routes
+# Import routes after FastAPI app creation
+from app.api.routes import router as api_router
 app.include_router(api_router, prefix="/v1")
 
 @app.get("/")
@@ -74,4 +73,4 @@ def read_root():
 #         return {"error": str(e)}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8001, reload=True)
