@@ -175,3 +175,5 @@ cython_debug/
 /bin
 .DS_Store
 tesla.json
+
+./src/node_modules
