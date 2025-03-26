@@ -16,7 +16,7 @@ function App() {
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
                 <BarChart3Icon className="h-8 w-8 text-wf-red" />
-                <span className="ml-2 text-xl font-bold text-wf-black">360° Risk View Lens</span>
+                <span className="ml-2 text-xl font-bold text-wf-black">360° Risk Lens</span>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                 <button
