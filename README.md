@@ -39,8 +39,8 @@ A comprehensive risk analysis system for financial transactions and entity monit
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/risk-analysis.git
-   cd risk-analysis
+   git clone https://github.com/ewfx/aidel-regulaize.git
+   cd aidel-regulaize
    ```
 
 2. Start the infrastructure services:
@@ -87,7 +87,7 @@ CHROMA_PORT=8001
 # Neo4j settings
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USER=neo4j
-NEO4J_PASSWORD=password123
+NEO4J_PASSWORD=<password for neo4j>
 ```
 
 ## API Endpoints
