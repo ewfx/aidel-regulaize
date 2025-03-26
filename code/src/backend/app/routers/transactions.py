@@ -9,6 +9,16 @@ router = APIRouter()
 transaction_service = TransactionService()
 kafka_service = KafkaService()
 
+@router.get("/statistics", response_model=dict)
+async def get_transaction_statistics(request: Request):
+    """Get transaction statistics"""
+    try:
+        if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        return await transaction_service.get_transaction_statistics(request.app.mongodb)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @router.get("", response_model=List[TransactionResponse])
 async def list_transactions(
     request: Request,
@@ -22,7 +32,6 @@ async def list_transactions(
     try:
         if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
             raise HTTPException(status_code=500, detail="Database connection not available")
-        
         transactions = await transaction_service.list_transactions(
             request.app.mongodb,
             skip=skip,
@@ -31,22 +40,7 @@ async def list_transactions(
             risk_threshold=risk_threshold,
             file_id=file_id
         )
-        
-        # Transform transactions to response format
-        responses = []
-        for transaction in transactions:
-            response = TransactionResponse(
-                transaction_id=transaction.transaction_id or transaction.id,
-                extracted_entities=[entity.name for entity in transaction.entities],
-                entity_types=[entity.type for entity in transaction.entities],
-                risk_score=transaction.risk_score,
-                supporting_evidence=transaction.supporting_evidence,
-                confidence_score=transaction.confidence_score,
-                reason=transaction.reason or "Risk assessment based on entity analysis"
-            )
-            responses.append(response)
-        
-        return responses
+        return transactions
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -56,20 +50,10 @@ async def get_transaction(transaction_id: str, request: Request):
     try:
         if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
             raise HTTPException(status_code=500, detail="Database connection not available")
-        
         transaction = await transaction_service.get_transaction(request.app.mongodb, transaction_id)
         if not transaction:
             raise HTTPException(status_code=404, detail="Transaction not found")
-        
-        return TransactionResponse(
-            transaction_id=transaction.transaction_id or transaction.id,
-            extracted_entities=[entity.name for entity in transaction.entities],
-            entity_types=[entity.type for entity in transaction.entities],
-            risk_score=transaction.risk_score,
-            supporting_evidence=transaction.supporting_evidence,
-            confidence_score=transaction.confidence_score,
-            reason=transaction.reason or "Risk assessment based on entity analysis"
-        )
+        return transaction
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -79,18 +63,8 @@ async def create_transaction(transaction_data: TransactionCreate, request: Reque
     try:
         if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
             raise HTTPException(status_code=500, detail="Database connection not available")
-        
         transaction = await transaction_service.create_transaction(request.app.mongodb, transaction_data)
-        
-        return TransactionResponse(
-            transaction_id=transaction.transaction_id or transaction.id,
-            extracted_entities=[entity.name for entity in transaction.entities],
-            entity_types=[entity.type for entity in transaction.entities],
-            risk_score=transaction.risk_score,
-            supporting_evidence=transaction.supporting_evidence,
-            confidence_score=transaction.confidence_score,
-            reason=transaction.reason or "Risk assessment based on entity analysis"
-        )
+        return transaction
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -100,7 +74,6 @@ async def update_transaction(transaction_id: str, update_data: TransactionUpdate
     try:
         if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
             raise HTTPException(status_code=500, detail="Database connection not available")
-        
         transaction = await transaction_service.update_transaction(
             request.app.mongodb,
             transaction_id,
@@ -108,16 +81,7 @@ async def update_transaction(transaction_id: str, update_data: TransactionUpdate
         )
         if not transaction:
             raise HTTPException(status_code=404, detail="Transaction not found")
-        
-        return TransactionResponse(
-            transaction_id=transaction.transaction_id or transaction.id,
-            extracted_entities=[entity.name for entity in transaction.entities],
-            entity_types=[entity.type for entity in transaction.entities],
-            risk_score=transaction.risk_score,
-            supporting_evidence=transaction.supporting_evidence,
-            confidence_score=transaction.confidence_score,
-            reason=transaction.reason or "Risk assessment based on entity analysis"
-        )
+        return transaction
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -127,11 +91,20 @@ async def delete_transaction(transaction_id: str, request: Request):
     try:
         if not hasattr(request, 'app') or not hasattr(request.app, 'mongodb'):
             raise HTTPException(status_code=500, detail="Database connection not available")
-        
         success = await transaction_service.delete_transaction(request.app.mongodb, transaction_id)
         if not success:
             raise HTTPException(status_code=404, detail="Transaction not found")
-        
         return {"message": "Transaction deleted successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/process-blocks", response_model=List[dict])
+async def process_transaction_blocks(content: str):
+    """Process transaction blocks and publish to Kafka topics"""
+    try:
+        transactions = kafka_service.parse_transaction_blocks(content)
+        for transaction in transactions:
+            await kafka_service.publish_transaction(transaction)
+        return transactions
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

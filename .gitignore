@@ -177,3 +177,7 @@ cython_debug/
 tesla.json
 
 ./src/node_modules
+code/src/package-lock.json
+/code/src/backend/bin
+
+

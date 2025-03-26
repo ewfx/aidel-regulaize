@@ -44,24 +44,27 @@ A comprehensive risk analysis system for financial transactions and entity monit
    ```
 
 2. Start the infrastructure services:
+(Install the docker app for your OS, if you dont have it already)
    ```bash
+   cd code/src
    docker-compose up -d
    ```
 
-3. Set up the backend:
-   ```bash
-   cd backend
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   uvicorn app.main:app --reload
-   ```
-
-4. Start the frontend:
+3. Start the frontend:
    ```bash
    cd frontend
    npm install
    npm run dev
+   ```
+   This should start the UI
+   
+4. Set up the backend:
+   ```bash
+   cd backend
+   python -m venv .
+   source ./bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   uvicorn main:app --reload
    ```
 
 5. Access the application:
