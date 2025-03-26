@@ -1,0 +1,1025 @@
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+
+
+Transaction ID: TXN-2024-4X7Y
+Date: 2024-02-18 11:30:00
+Sender:
+- Name: "Green Energy Solutions Ltd."
+- Account: IBAN DE89 3704 0044 0532 0130 00 (Germany)
+- Address: Friedrichstr. 68, Berlin, Germany
+- Notes: "Solar Panel Procurement Payment"
+Receiver:
+- Name: "EcoBuild Supplies LLC"
+- Account: 1122334455 (HSBC USA)
+- Address: 400 Park Ave, New York, USA
+- Tax ID: US-3456789
+Amount: $300,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.14)
+Transaction Type: Wire Transfer
+Reference: "Invoice #GE-2024-001"
+Additional Notes:
+- "Processed via SWIFT payment network."
+- "No anomalies detected."
+
+Transaction ID: TXN-2024-5Z9W
+Date: 2024-03-12 15:45:22
+Sender:
+- Name: "BlueTech Innovations"
+- Account: IBAN FR14 2004 1010 0505 0001 3M02 606 (France)
+- Address: 22 Rue de Rivoli, Paris, France
+- Notes: "Software Development Services"
+Receiver:
+- Name: "TechSolutions USA Inc."
+- Account: 9988776655 (Wells Fargo, USA)
+- Address: 700 Market St, San Francisco, USA
+- Tax ID: US-5678901
+Amount: $120,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.12)
+Transaction Type: ACH Transfer
+Reference: "Service Invoice #TS2024-1005"
+Additional Notes:
+- "Payment cleared via normal banking channels."
+- "No suspicious indicators detected."
+

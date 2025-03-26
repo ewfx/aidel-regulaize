@@ -1,0 +1,975 @@
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
+
+Transaction ID: TXN-2024-1A3B
+Date: 2024-02-15 10:05:30
+Sender:
+- Name: "Eastern Consulting LLP"
+- Account: IBAN NL91 ABNA 0417 1643 00 (Netherlands)
+- Address: Keizersgracht 123, Amsterdam, Netherlands
+- Notes: "Market Research Payment"
+Receiver:
+- Name: "Silver Lining Nonprofit Org"
+- Account: 678923456 (Isle of Man Bank, IM)
+- Address: 45 Bay Street, Douglas, Isle of Man
+- Tax ID: IM-98234
+Amount: $150,000.00 (USD)
+Currency Exchange: GBP → USD (Rate: 1.32)
+Transaction Type: SWIFT
+Reference: "Community Development Grant"
+Additional Notes:
+- "Processed via intermediary EastCorp Ltd. (Panama)."
+- "Sender IP: 185.34.56.78."
+
+Transaction ID: TXN-2024-2B5F
+Date: 2024-03-10 16:20:45
+Sender:
+- Name: "Quantum Trading Ltd."
+- Account: VGB4BVIR035612345678 (British Virgin Islands)
+- Beneficiary Owner: "Roberto Vasquez" (DOB: 1982-07-29, Venezuelan passport VE456789)
+Receiver:
+- Name: "Golden Sands Trading FZE"
+- Account: AE890450000987654321 (Dubai, UAE)
+- Registration: UAE Free Zone License #234-FZ
+Amount: $850,000.00 (USD)
+Currency Exchange: EUR → USD (Rate: 1.10)
+Transaction Type: SWIFT
+Reference: "Trade Settlement - Invoice #2024-7689"
+Additional Notes:
+- "Funds routed via Barclays London (BARCGB22) → Mashreq Bank Dubai."
+- "Invoice attached: 'Industrial Equipment Procurement'."
+
