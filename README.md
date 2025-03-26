@@ -1,89 +1,147 @@
-# 🚀 Project Name
+# 360° Risk Lens
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Pre-Load OFAC Sanctions List into MongoDB instance](#ofac-sanctions)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+A comprehensive risk analysis system for financial transactions and entity monitoring.
 
----
+## Features
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+- Real-time transaction risk analysis
+- Entity extraction and relationship mapping
+- Multi-source data enrichment (OFAC, SEC)
+- Graph-based relationship analysis
+- Vector similarity search
+- Streaming data processing with Kafka
+- Beautiful React dashboard with real-time updates
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+## Tech Stack
 
-![Screenshot 1](link-to-image)
+### Backend
+- FastAPI
+- MongoDB
+- Neo4j (Graph Database)
+- ChromaDB (Vector Store)
+- Apache Kafka
+- Transformers (NLP)
+- SpaCy (Entity Extraction)
 
+### Frontend
+- React
+- TanStack Query
+- Tailwind CSS
+- Lucide Icons
 
-## 🚧 Pre-Load OFAC Sanctions List into MongoDB instance
-The latest sanction list (published on 21st March 2025) has been downloaded and saved in "static_data/sdn.xml".
-To load this data into the mongoDB instance, follow these steps:
-1. Provide the MongoDB Sanctions DB and collection name in the .env file:
-   ```sh
-   MONGO_DB=regulaizedb
-   MONGO_SANCTIONS_COLLECTION=sdn_list
+## Prerequisites
+
+- Docker and Docker Compose
+- Node.js 20+
+- Python 3.11+
+
+## Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/risk-analysis.git
+   cd risk-analysis
    ```
-2. From the terminal run the following command:
-   ```sh
-   python3 load_sdn_list.py
-   ```
 
-3. If you need to wipe existing data from the mongoDB sanctions database before inserting fresh data, run the script with the --wipe flag (it will ask for confirmation before deleting data from the DB).
-   ```sh
-   python3 load_sdn_list.py --wipe
-   ```
-
-## 🏃 How to Run
-1. If you already have an existing Redis and MongoDB instance, provide the config (hostname, port) in ".env" fie situated under code/src
-
-2. If however you do not have existing instances of Redis and/mongodDB you can start your own locally using DOCKER containers. 
-
-3. Ensure you have the DOCKER applicaition installed and running
-
-4. Navigate to code/src and execute this command in the terminal:
-   ```sh
+2. Start the infrastructure services:
+   ```bash
    docker-compose up -d
    ```
 
-5. This will startup instances of Redis and MongoDB locally, in the predefined ports provided in .env file
-
-6. To kill the docker instances you can run the below command in terminal:
-   ```sh
-   docker-compose down
+3. Set up the backend:
+   ```bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   uvicorn app.main:app --reload
    ```
 
-7. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-8. Install dependencies  
-   ```sh
-   pip install -r requirements.txt (for Python)
-   ```
-9. Run the project  
-   ```sh
-   python main.py
-
-10. To test whether the app has started successfuly you can access the below endpoints:
-   ```sh
-   http://127.0.0.1:8000/
-   http://127.0.0.1:8000/mongo-test
-   http://127.0.0.1:8000/redis-test
-   http://127.0.0.1:8000/docs
+4. Start the frontend:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
    ```
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+5. Access the application:
+   - Frontend: http://localhost:5173
+   - API Docs: http://localhost:8000/docs
+   - Kafka UI: http://localhost:8080
+   - Neo4j Browser: http://localhost:7474
+   - ChromaDB UI: http://localhost:8001
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+## Environment Variables
+
+### Backend (.env)
+```env
+MONGODB_URL=mongodb://localhost:27017
+MONGODB_DB_NAME=risk_analysis
+SECRET_KEY=your-secret-key-change-in-production
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# ChromaDB settings
+CHROMA_HOST=localhost
+CHROMA_PORT=8001
+
+# Neo4j settings
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=password123
+```
+
+## API Endpoints
+
+### Transactions
+- `GET /api/transactions` - List transactions
+- `POST /api/transactions` - Create transaction
+- `GET /api/transactions/{id}` - Get transaction details
+- `PUT /api/transactions/{id}` - Update transaction
+- `DELETE /api/transactions/{id}` - Delete transaction
+
+### Entities
+- `GET /api/entities` - Search entities
+- `GET /api/entities/{id}` - Get entity details
+
+### Files
+- `POST /api/files` - Upload file
+- `GET /api/files` - List files
+- `GET /api/files/{id}` - Get file status
+- `DELETE /api/files/{id}` - Delete file
+
+### Pipeline
+- `GET /api/pipeline/status/{file_id}` - Get processing status
+
+## Development
+
+### Code Structure
+
+```
+.
+├── backend/
+│   ├── app/
+│   │   ├── core/          # Core configuration
+│   │   ├── models/        # Data models
+│   │   ├── routers/       # API routes
+│   │   └── services/      # Business logic
+│   ├── tests/             # Backend tests
+│   └── requirements.txt   # Python dependencies
+├── frontend/
+│   ├── components/        # React components
+│   ├── services/          # API client
+│   └── types/            # TypeScript types
+└── docker-compose.yml    # Infrastructure setup
+```
+
+### Testing
+
+Run backend tests:
+```bash
+cd backend
+pytest
+```
+
+Run frontend tests:
+```bash
+npm test
+```
